@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Kamu, Sayangku</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mengingat Indahnya Kita</h1>
+    </header>
+
+    <section id="gallery">
+        <h2>Kenangan yang Tak Terlupakan</h2>
+        <div class="photo-grid">
+            <img src="img/Gambar 1.jpg" alt="Kenangan Kita 1">
+            <img src="img/Gambar 2.JPG" alt="Kenangan Kita 2">
+            <img src="img/Gambar 3.JPG" alt="Kenangan Kita 3">
+            </div>
+    </section>
+
+    <section id="message">
+        <h2>Ada yang Ingin Aku Sampaikan</h2>
+        <p>Sayangku,</p>
+        <p>Mungkin saat ini ada ganjalan di hati kita. Aku tahu, mungkin aku ada salah, atau mungkin ada hal lain yang membuatmu tidak nyaman. Aku sungguh menyesal jika ada perkataanku atau perbuatanku yang menyakitimu.</p>
+        <p>Melihat foto-foto ini, aku jadi teringat betapa banyak momen indah yang telah kita lalui bersama. Tawa, canda, dukungan, dan cinta yang selalu kita bagi. Itu semua sangat berarti bagiku, dan aku tidak ingin kehilangan itu.</p>
+        <p>Setiap momen bersamamu adalah hadiah yang tak ternilai. Kamu adalah bagian penting dalam hidupku, dan aku sangat menyayangimu.</p>
+        <p>Aku harap, kita bisa menyelesaikan masalah ini bersama-sama. Mari kita kembali seperti dulu, atau bahkan lebih baik lagi.</p>
+        <p>Maafkan aku ya, Sayang. Aku sangat merindukanmu.</p>
+    </section>
+
+    <section id="action">
+        <a href="URL_PESANMU" class="button">Aku Sayang Kamu, Maafkan Aku</a>
+    </section>
+
+    <footer>
+        <p>&copy; Djul Fikri Ferdiansyah- Untuk Kamu yang Kucintai</p>
+    </footer>
+
+    <script>
+        // Sedikit efek acak pada rotasi foto (opsional)
+        const photos = document.querySelectorAll('.photo-grid img');
+        photos.forEach(photo => {
+            const randomRotation = (Math.random() - 0.5) * 5; // Rotasi antara -5 dan 5 derajat
+            photo.style.transform = `rotate(${randomRotation}deg)`;
+        });
+    </script>
+</body>
+</html>
